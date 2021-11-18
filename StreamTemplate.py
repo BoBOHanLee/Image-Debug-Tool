@@ -52,7 +52,6 @@ class StreamObj:
         while cap.isOpened():
             frame = cap.read()[1]
             self.img = frame
-            self.Get_ImageInfo(frame)
 
             '''  ---Reshape Image to show full FOV---   '''
             shape = frame.shape
